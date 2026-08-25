@@ -1,0 +1,5 @@
+Complete every applicable item before releasing an SD-8400 inverter from an A12 Maintenance Hold. An acknowledged alarm is not evidence that the underlying condition has cleared.
+
+Record the authorized inspection or maintenance disposition, including any obstruction removed and any qualified work performed. Confirm intake screens, exhaust openings, guards, and the exterior cooling-air path are clear and restored to their approved configuration. Confirm fan feedback is present and stable. After fan command is stable at or above 80 percent, verify command/feedback variance remains at or below 5 percentage points for ten continuous minutes. Confirm no new A12 event occurs during the ten-minute verification interval and no abnormal fan noise or vibration is reported. Obtain control-room authorization, record the release, and monitor the next loaded operating interval for recurrence.
+
+If any acceptance criterion is unmet, feedback is missing or unstable, variance remains above 5 percentage points, or A12 repeats, retain Maintenance Hold and escalate to qualified maintenance.

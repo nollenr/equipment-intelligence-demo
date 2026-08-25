@@ -1,0 +1,7 @@
+Use this sequence for INV-102 while it remains in Maintenance Hold after fault A12. Notify the control room that inspection is beginning.
+
+From the exterior, inspect intake screens, exhaust openings, fan guards, and the visible cooling-air path for vegetation, dust loading, loose material, water, or physical damage. Review fan command and fan-feedback trends for the same time window. Record whether feedback is present, stable, and responsive when command changes.
+
+If the latest variance remains above 12 percentage points, feedback is missing or unstable, or abnormal noise or vibration is reported, keep the inverter in Maintenance Hold and create a qualified-maintenance work order. If corrective work is performed, record the disposition and use the approved return-to-service checklist. Acknowledging A12 is not sufficient for release.
+
+Escalate whenever access beyond exterior inspection is required, debris cannot be safely removed under the current work authorization, or command/feedback disagreement persists after the exterior cooling path is confirmed clear.

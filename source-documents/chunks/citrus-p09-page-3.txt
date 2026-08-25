@@ -1,0 +1,7 @@
+Use this sequence for TRK-01 while it remains in Safe Stow Hold after fault P09. Notify the control room that observation is beginning.
+
+From outside the movement envelope, inspect the row path for vegetation, windblown debris, pooled material, and row-to-row or module-to-module interference. Observe visible modules, supports, torque-tube alignment, linkage, and drive housing for displacement, bending, loose material, or impact evidence. Do not touch components.
+
+Compare commanded and measured angle over the event window. Record whether feedback is present, stable, and responsive; also record abnormal or sustained drive-current loading.
+
+If deviation remains above 5.0 degrees, feedback is missing or unstable, drive current remains above 7.5 amperes, or the path is not visibly clear, retain Safe Stow Hold and create a qualified-maintenance work order. Escalate whenever a check requires entry into the movement envelope, an obstruction cannot be safely characterized from outside the exclusion zone, or disagreement or elevated loading persists after the visible path is confirmed clear.

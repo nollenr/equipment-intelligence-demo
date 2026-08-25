@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HPS-2500X Synthetic Operations Manual v4.2</title>
+  <link rel="stylesheet" href="document.css">
+</head>
+<body>
+  <section class="page cover">
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <div class="cover-mark">H</div>
+    <h1>HPS-2500X Solar Inverter</h1>
+    <p class="cover-subtitle">Installation, Operations &amp; Maintenance Manual</p>
+    <dl class="cover-meta">
+      <dt>Document</dt><dd>HPS-OM-2500X</dd>
+      <dt>Version</dt><dd>4.2</dd>
+      <dt>Effective</dt><dd>March 1, 2026</dd>
+      <dt>Status</dt><dd>Approved — Synthetic</dd>
+      <dt>Manufacturer</dt><dd>Helios Power Systems (Synthetic)</dd>
+    </dl>
+    <div class="doc-footer"><span>HPS-OM-2500X · v4.2</span><span>Page 1 of 3</span></div>
+  </section>
+
+  <section class="page">
+    <div class="doc-header"><strong>HPS-2500X Operations Manual</strong><span>Thermal protection</span></div>
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <h2>7. Thermal Management</h2>
+    <p class="lead">The HPS-2500X controller continuously evaluates internal controller temperature, cooling-fan feedback, ambient conditions, and commanded power.</p>
+
+    <h3>7.1 Protective operating states</h3>
+    <table>
+      <thead><tr><th>State</th><th>Controller behavior</th><th>Operator meaning</th></tr></thead>
+      <tbody>
+        <tr><td>Full output</td><td>Normal power command is available.</td><td>No thermal restriction is active.</td></tr>
+        <tr><td>Derated</td><td>Power is reduced while the inverter remains online.</td><td>Protective response; not equivalent to a full trip.</td></tr>
+        <tr><td>Thermal trip</td><td>Power conversion stops and a manual review is required.</td><td>Higher-severity protection state.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>7.2 Cooling-path inspection</h3>
+    <ul>
+      <li>Confirm the work is authorized under the applicable site procedure.</li>
+      <li>Check intake screens and exhaust paths for dust, vegetation, packaging, or standing water.</li>
+      <li>Compare commanded and reported cooling-fan speed; investigate sustained variance.</li>
+      <li>Do not bypass thermal limits or force an output command while a protective state is active.</li>
+    </ul>
+
+    <div class="callout warning"><strong>Safety note:</strong> This synthetic manual does not replace site electrical-safety, isolation, or lockout/tagout requirements.</div>
+    <div class="doc-footer"><span>HPS-OM-2500X · v4.2</span><span>Page 2 of 3</span></div>
+  </section>
+
+  <section class="page">
+    <div class="doc-header"><strong>HPS-2500X Operations Manual</strong><span>Fault B17</span></div>
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <h2>7.3 Fault B17 — Controller Thermal Derating</h2>
+    <p class="lead">Fault B17 is asserted when controller temperature exceeds the configured 75&nbsp;°C derating threshold. The inverter remains connected and reduces active-power output to protect controller electronics.</p>
+
+    <div class="callout"><strong>Expected behavior:</strong> A B17 event changes the operating state from Full Output to Derated. It is a protective derating event, not evidence by itself of a failed controller or a full inverter trip.</div>
+
+    <h3>Required checks before reset or return to full output</h3>
+    <ol class="step-list">
+      <li>Verify controller temperature is trending downward and has remained below 70&nbsp;°C for at least five minutes.</li>
+      <li>Inspect cooling-air intake and exhaust paths for obstruction or contamination.</li>
+      <li>Confirm cooling-fan feedback is present and does not show sustained variance from command.</li>
+      <li>Confirm the ambient-temperature input is plausible for site conditions.</li>
+      <li>Use the approved site procedure to acknowledge the event and restore service. Escalate repeated B17 events to reliability engineering.</li>
+    </ol>
+
+    <h3>Escalation criteria</h3>
+    <ul>
+      <li>Controller temperature continues to rise after output is derated.</li>
+      <li>Controller temperature reaches 82&nbsp;°C.</li>
+      <li>Cooling-fan feedback is absent or unstable.</li>
+      <li>B17 repeats within 24 hours after an authorized inspection and reset.</li>
+    </ul>
+
+    <div class="callout note"><strong>Evidence interpretation:</strong> High ambient temperature can reduce thermal margin, but it does not by itself establish root cause. Inspection evidence is required before attributing the event to contamination or component failure.</div>
+    <div class="doc-footer"><span>HPS-OM-2500X · v4.2</span><span>Page 3 of 3</span></div>
+  </section>
+</body>
+</html>

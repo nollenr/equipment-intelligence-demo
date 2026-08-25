@@ -1,0 +1,41 @@
+-- Explicitly scoped reset: remove only the deterministic synthetic rows owned by this seed.
+DELETE FROM nextera.diagnostic_runs
+WHERE fault_event_id IN (
+  '30000000-0000-4000-8000-000000000017',
+  '30000000-0000-4000-8000-000000000112',
+  '30000000-0000-4000-8000-000000000204'
+);
+
+DELETE FROM nextera.documents
+WHERE id IN (
+  '70000000-0000-4000-8000-000000000001',
+  '70000000-0000-4000-8000-000000000002',
+  '70000000-0000-4000-8000-000000000003'
+);
+
+DELETE FROM nextera.retrieval_scope_permissions
+WHERE principal_id IN (
+  '50000000-0000-4000-8000-000000000001',
+  '50000000-0000-4000-8000-000000000002'
+);
+
+DELETE FROM nextera.retrieval_scopes
+WHERE id IN (
+  '60000000-0000-4000-8000-000000000001',
+  '60000000-0000-4000-8000-000000000002',
+  '60000000-0000-4000-8000-000000000003'
+);
+
+DELETE FROM nextera.demo_principals
+WHERE id IN (
+  '50000000-0000-4000-8000-000000000001',
+  '50000000-0000-4000-8000-000000000002'
+);
+
+-- Plant deletion cascades only to the deterministic demo equipment, events, and metrics.
+DELETE FROM nextera.plants
+WHERE id IN (
+  '10000000-0000-4000-8000-000000000001',
+  '10000000-0000-4000-8000-000000000002',
+  '10000000-0000-4000-8000-000000000003'
+);

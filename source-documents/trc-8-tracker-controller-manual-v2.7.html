@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TRC-8 Synthetic Tracker Controller Manual v2.7</title>
+  <link rel="stylesheet" href="document.css">
+</head>
+<body>
+  <section class="page cover">
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <div class="cover-mark">T</div>
+    <h1>TRC-8 Tracker Controller</h1>
+    <p class="cover-subtitle">Operations, Position Feedback &amp; Fault Response Manual</p>
+    <dl class="cover-meta">
+      <dt>Document</dt><dd>TRC-OM-008</dd>
+      <dt>Version</dt><dd>2.7</dd>
+      <dt>Effective</dt><dd>May 14, 2026</dd>
+      <dt>Status</dt><dd>Approved — Synthetic</dd>
+      <dt>Manufacturer</dt><dd>TrackRight Controls (Synthetic)</dd>
+    </dl>
+    <div class="doc-footer"><span>TRC-OM-008 · v2.7</span><span>Page 1 of 3</span></div>
+  </section>
+
+  <section class="page">
+    <div class="doc-header"><strong>TRC-8 Operations Manual</strong><span>Position monitoring</span></div>
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <h2>6. Position Monitoring</h2>
+    <p class="lead">The TRC-8 compares the commanded row angle with measured position feedback and records a derived absolute deviation during automatic tracking.</p>
+    <h3>6.1 Signal interpretation</h3>
+    <table>
+      <thead><tr><th>Signal</th><th>Meaning</th><th>Interpretation limit</th></tr></thead>
+      <tbody>
+        <tr><td>Commanded angle</td><td>Controller-requested tracker angle.</td><td>Does not prove physical row position.</td></tr>
+        <tr><td>Measured angle</td><td>Reported row position.</td><td>May be affected by sensing, linkage, or drive conditions.</td></tr>
+        <tr><td>Position deviation</td><td>Absolute difference between command and measurement.</td><td>Identifies disagreement; it does not identify a failed component.</td></tr>
+      </tbody>
+    </table>
+    <h3>6.2 Motion safety boundary</h3>
+    <ul>
+      <li>Keep the affected row in Safe Stow Hold while position disagreement remains unresolved.</li>
+      <li>Remain outside the tracker movement envelope and use the site-approved motion-control process.</li>
+      <li>Contact with drive, torque-tube, linkage, or sensor components requires qualified maintenance and the applicable isolation and lockout/tagout procedure.</li>
+    </ul>
+    <div class="callout warning"><strong>Safety note:</strong> A stationary row may move unexpectedly if controls, stored energy, or an obstruction change. This synthetic manual does not replace site procedures.</div>
+    <div class="doc-footer"><span>TRC-OM-008 · v2.7</span><span>Page 2 of 3</span></div>
+  </section>
+
+  <section class="page">
+    <div class="doc-header"><strong>TRC-8 Operations Manual</strong><span>Fault P09</span></div>
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <h2>6.3 Fault P09 — Tracker Position Deviation</h2>
+    <p class="lead">Fault P09 is asserted when absolute commanded-versus-measured row-position deviation exceeds 5.0 degrees during the controller diagnostic window. The affected row enters Safe Stow Hold and automatic motion is inhibited pending inspection.</p>
+    <div class="callout"><strong>Expected behavior:</strong> P09 establishes that commanded and measured position disagreed beyond the configured limit. It does not, by itself, prove a failed actuator, position sensor, drive, or linkage. Obstruction, row interference, mechanical drag, feedback sensing, and control-path conditions remain possible until inspected.</div>
+    <h3>Required response</h3>
+    <ol class="step-list">
+      <li>Confirm the asset, P09 event window, and Safe Stow Hold with the control room.</li>
+      <li>Review commanded angle, measured angle, position deviation, and drive-motor current for the same window.</li>
+      <li>From outside the movement envelope, inspect the visible row path and structure for vegetation, debris, row-to-row interference, displaced modules, or damaged members.</li>
+      <li>Do not command motion, enter the movement envelope, or touch drive components under this diagnostic step.</li>
+      <li>Use the approved site inspection procedure and return-to-automatic checklist before release.</li>
+    </ol>
+    <div class="callout note"><strong>Evidence interpretation:</strong> Elevated drive current is consistent with increased loading, but neither current nor position deviation alone establishes the underlying cause.</div>
+    <div class="doc-footer"><span>TRC-OM-008 · v2.7</span><span>Page 3 of 3</span></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Synthetic Fleet B17 High-Ambient Bulletin v1.3</title>
+  <link rel="stylesheet" href="document.css">
+</head>
+<body>
+  <section class="page cover">
+    <span class="synthetic-banner">Synthetic restricted bulletin · Not for field use</span>
+    <div class="cover-mark">R</div>
+    <h1>B17 Events During High-Ambient Operation</h1>
+    <p class="cover-subtitle">Fleet Reliability Engineering Bulletin</p>
+    <dl class="cover-meta">
+      <dt>Bulletin</dt><dd>FRE-2026-017</dd>
+      <dt>Version</dt><dd>1.3</dd>
+      <dt>Effective</dt><dd>July 10, 2026</dd>
+      <dt>Status</dt><dd>Approved — Synthetic</dd>
+      <dt>Audience</dt><dd>Reliability engineering</dd>
+    </dl>
+    <div class="callout note"><strong>Access scope:</strong> Engineering Restricted. Field technicians do not receive this source unless their assigned principal is granted the scope.</div>
+    <div class="doc-footer"><span>FRE-2026-017 · v1.3</span><span>Page 1 of 2</span></div>
+  </section>
+
+  <section class="page">
+    <div class="doc-header"><strong>Fleet Reliability Bulletin</strong><span>B17 / high ambient</span></div>
+    <span class="synthetic-banner">Synthetic restricted bulletin · Not for field use</span>
+    <h2>2. Fleet Pattern and Engineering Guidance</h2>
+    <p class="lead">Synthetic fleet review found that B17 frequency increased when ambient temperature exceeded 35&nbsp;°C and cooling-path restriction was also present. Ambient temperature alone was not a sufficient predictor.</p>
+
+    <h3>2.1 Observed pattern</h3>
+    <table>
+      <thead><tr><th>Condition</th><th>Synthetic observation</th><th>Interpretation</th></tr></thead>
+      <tbody>
+        <tr><td>Ambient ≤ 35 °C</td><td>Low B17 frequency</td><td>Normal thermal margin in reviewed sample</td></tr>
+        <tr><td>Ambient &gt; 35 °C, clear cooling path</td><td>Occasional short derating</td><td>High ambient reduces margin but does not prove a defect</td></tr>
+        <tr><td>Ambient &gt; 35 °C plus restricted airflow</td><td>Repeated or longer B17 events</td><td>Prioritize cooling-path inspection</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 Engineering recommendations</h3>
+    <ul>
+      <li>Treat 35&nbsp;°C as a fleet-analysis context threshold, not an OEM trip or derating setpoint.</li>
+      <li>Do not infer fan failure or contamination from temperature and weather data alone.</li>
+      <li>For repeated B17 events, compare affected units with same-model peers and review inspection results.</li>
+      <li>Retain the exact metric window, document versions, and field disposition with each diagnostic run.</li>
+    </ul>
+
+    <div class="callout"><strong>For the Manatee example:</strong> A 36.8&nbsp;°C ambient peak provides relevant context, while the 78.4&nbsp;°C controller peak versus the 75&nbsp;°C OEM threshold establishes the deterministic exceedance.</div>
+    <div class="doc-footer"><span>FRE-2026-017 · v1.3</span><span>Page 2 of 2</span></div>
+  </section>
+</body>
+</html>

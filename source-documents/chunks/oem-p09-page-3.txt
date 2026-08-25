@@ -1,0 +1,7 @@
+Fault P09 is asserted when absolute commanded-versus-measured row-position deviation exceeds 5.0 degrees during the controller diagnostic window. The affected row enters Safe Stow Hold and automatic motion is inhibited pending inspection.
+
+P09 establishes that commanded and measured position disagreed beyond the configured limit. It does not, by itself, prove a failed actuator, position sensor, drive, or linkage. Obstruction, row interference, mechanical drag, feedback sensing, and control-path conditions remain possible until inspected.
+
+Confirm the asset, event window, and Safe Stow Hold. Review commanded angle, measured angle, position deviation, and drive-motor current for the same window. From outside the movement envelope, inspect the visible row path and structure for vegetation, debris, row-to-row interference, displaced modules, or damaged members. Do not command motion, enter the movement envelope, or touch drive components under this diagnostic step. Use the approved site procedure and return-to-automatic checklist before release.
+
+Elevated drive current is consistent with increased loading, but neither current nor position deviation alone establishes the underlying cause.

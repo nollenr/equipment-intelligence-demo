@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SD-8400 Synthetic Cooling and Fault Manual v3.9</title>
+  <link rel="stylesheet" href="document.css">
+</head>
+<body>
+  <section class="page cover">
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <div class="cover-mark">S</div>
+    <h1>SD-8400 Solar Inverter</h1>
+    <p class="cover-subtitle">Cooling System, Operations &amp; Fault Response Manual</p>
+    <dl class="cover-meta">
+      <dt>Document</dt><dd>SD-OM-8400</dd>
+      <dt>Version</dt><dd>3.9</dd>
+      <dt>Effective</dt><dd>April 2, 2026</dd>
+      <dt>Status</dt><dd>Approved — Synthetic</dd>
+      <dt>Manufacturer</dt><dd>Solara Dynamics (Synthetic)</dd>
+    </dl>
+    <div class="doc-footer"><span>SD-OM-8400 · v3.9</span><span>Page 1 of 3</span></div>
+  </section>
+
+  <section class="page">
+    <div class="doc-header"><strong>SD-8400 Cooling &amp; Fault Manual</strong><span>Fan monitoring</span></div>
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <h2>8. Cooling-Fan Monitoring</h2>
+    <p class="lead">The SD-8400 compares each commanded fan-speed signal with the corresponding feedback signal and records a derived variance for equipment-health diagnostics.</p>
+
+    <h3>8.1 Interpreting command and feedback</h3>
+    <table>
+      <thead><tr><th>Signal</th><th>Meaning</th><th>Interpretation limit</th></tr></thead>
+      <tbody>
+        <tr><td>Fan command</td><td>Controller-requested fan speed.</td><td>Does not prove mechanical rotation.</td></tr>
+        <tr><td>Fan feedback</td><td>Reported speed from the fan-feedback circuit.</td><td>May be affected by fan, connector, wiring, or sensing conditions.</td></tr>
+        <tr><td>Derived variance</td><td>Absolute difference between command and feedback.</td><td>Identifies disagreement; it does not identify the failed component.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>8.2 Authorized response boundary</h3>
+    <ul>
+      <li>Use site-approved procedures before inspecting or servicing cooling equipment.</li>
+      <li>Do not bypass fan supervision, force a fan command, or clear a maintenance hold solely to restore output.</li>
+      <li>Opening an enclosure or contacting internal components requires the applicable electrical isolation and lockout/tagout process.</li>
+    </ul>
+    <div class="callout warning"><strong>Safety note:</strong> This synthetic manual does not replace site electrical-safety, isolation, or lockout/tagout requirements.</div>
+    <div class="doc-footer"><span>SD-OM-8400 · v3.9</span><span>Page 2 of 3</span></div>
+  </section>
+
+  <section class="page">
+    <div class="doc-header"><strong>SD-8400 Cooling &amp; Fault Manual</strong><span>Fault A12</span></div>
+    <span class="synthetic-banner">Synthetic demo document · Not for field use</span>
+    <h2>8.4 Fault A12 — Cooling Fan Feedback Variance</h2>
+    <p class="lead">Fault A12 is asserted when the derived cooling-fan command/feedback variance exceeds the configured 12-percentage-point threshold during the controller diagnostic window. The inverter enters Maintenance Hold so the cooling system can be inspected before return to service.</p>
+
+    <div class="callout"><strong>Expected behavior:</strong> A12 establishes that commanded and reported fan speed disagreed beyond the configured limit. It does not, by itself, prove a failed fan. Obstruction, connector or wiring conditions, feedback sensing, and intermittent mechanical drag remain possible until inspected.</div>
+
+    <h3>Required checks</h3>
+    <ol class="step-list">
+      <li>Keep the inverter in Maintenance Hold and confirm the event and diagnostic window with the control room.</li>
+      <li>Inspect accessible intake screens, exhaust openings, fan guards, and the exterior cooling-air path for obstruction, contamination, or damage.</li>
+      <li>Compare fan command and fan feedback. Treat missing, unstable, or persistently divergent feedback as unresolved.</li>
+      <li>Use the approved site procedure before any internal inspection. Do not open energized compartments for this check.</li>
+      <li>Apply the approved return-to-service checklist after corrective work; do not clear A12 solely because the alarm is acknowledged.</li>
+    </ol>
+
+    <div class="callout note"><strong>Evidence interpretation:</strong> High ambient temperature can increase fan demand, but ambient temperature alone does not explain excessive command/feedback variance or establish component failure.</div>
+    <div class="doc-footer"><span>SD-OM-8400 · v3.9</span><span>Page 3 of 3</span></div>
+  </section>
+</body>
+</html>

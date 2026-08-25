@@ -1,0 +1,3 @@
+Synthetic fleet review found that B17 frequency increased when ambient temperature exceeded 35 °C and cooling-path restriction was also present. Ambient temperature alone was not a sufficient predictor. Treat 35 °C as a fleet-analysis context threshold, not an OEM trip or derating setpoint. Do not infer fan failure or contamination from temperature and weather data alone. For repeated B17 events, compare affected units with same-model peers and review inspection results. Retain the exact metric window, document versions, and field disposition with each diagnostic run.
+
+For the Manatee example, a 36.8 °C ambient peak provides relevant context, while the 78.4 °C controller peak versus the 75 °C OEM threshold establishes the deterministic exceedance.

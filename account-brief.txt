@@ -1,0 +1,91 @@
+Account overview
+
+
+Deal: NextEra Energy, Inc. - NextBrain, Tools Hub -  New Business
+
+Customer overview
+* NextEra Energy, Inc. operates in the energy sector, specifically as the largest regulated electric utility in the US and the leading generator of renewable energy.
+
+* They are involved in commissioning and building control systems for approximately 65 power plant projects annually across the country, encompassing wind, solar, battery, and fossil fuel technologies.
+
+* The company also has a significant presence in the data center industry, particularly in Ashburn, Virginia, where they manage infrastructure supporting a large volume of internet traffic.
+
+* Their growth strategy includes potential expansion through acquisitions, such as the Dominion Energy acquisition.
+
+
+Business goals
+* NextEra Energy, Inc.'s primary business objective is to infuse AI into their operations to achieve more agentic workflows and generate "durability economic value."
+
+* Their strategic goals include building efficiencies in the commissioning process, reducing costs, and improving the efficiency of problem-solving in the field.
+
+* They aim to track systemic equipment issues, provide technicians with solutions based on OEM manuals and industry knowledge, and develop health analytics systems for equipment monitoring.
+
+* A foundational goal is to centralize and organize their data to establish a single source of truth to enable automation and agentic workflows.
+
+
+Pain points
+* NextEra Energy, Inc. consistently faces time constraints in meeting commercial operation dates during the commissioning process.
+
+* There is a shortage of IT professionals capable of connecting disparate data systems and a prevalence of siloed data, leading to fragmentation and inefficiency.
+
+* The company struggles with disorganized and distributed data across numerous spreadsheets, resulting in no single source of truth and frequent debates over data accuracy.
+
+* NextEra Energy, Inc. experiences high data latency, with retrieval times for answers from large databases and APIs taking several minutes, which is unacceptable for field operations.
+
+* They have low confidence in current AI responses (often 50% or less) and face challenges with AI memory, consistency, and a lack of domain knowledge for accurate insights.
+
+
+Key players
+* Bryan Amadio, Director of Commissioning and Controls Engineering, is a key player due to his oversight of 65 power plant projects annually and his drive for efficiency and AI-driven data management.
+
+* Jason Skopek, who leads a controls engineering team and acts as an IIoT technologist, is crucial for technical evaluation and adoption as he is hands-on with plant control systems.
+
+* Igor, the AI liaison, is central to defining the AI strategy and identifying robust data solutions as he integrates AI into their business and builds health analytics systems.
+
+* These individuals are key because they possess deep operational and technical knowledge, are directly impacted by current pain points, and are actively seeking solutions for AI, efficiency, and data management.
+
+
+Decision-making process
+* The decision-making process begins with finalizing an NDA and sharing a non-NDA friendly scope document for initial information exchange.
+
+* A critical next step involves an "architecture fit assessment" through a design session to conceptualize the foundational data layer and schema.
+
+* Compliance with NERC CIP is a factor due to their critical infrastructure protection status, though initial data access will be off-premise.
+
+* They are seeking a partnership and expect concrete recommendations from Cockroach Labs on how their offerings can address identified challenges.
+
+* The process will involve iterative engagement with scheduled follow-up working sessions to refine the solution and establish a robust data foundation.
+
+
+Decision criteria
+* NextEra Energy, Inc. is evaluating solutions based on usability, reliability, and low latency, as their current solutions are too slow for field operations.
+
+* They require data accuracy, consistency, and the ability to effectively ground AI responses with specific, contextual domain knowledge to ensure accuracy and relevance.
+
+* A robust data architecture is needed to centralize domain knowledge and handle gigantic volumes of data, such as 200,000 tags per second from 400 power plants, as well as a variety of unstructured data.
+
+* NextEra also seeks deterministic results and compliance with industry regulations like CIP (Critical Infrastructure Protection).
+
+
+Account growth opportunities
+* CockroachDB can serve as a foundational data layer to help NextEra overcome "silo syndrome" and establish a single source of truth for their distributed data, moving away from spreadsheets.
+
+* There is an opportunity to provide professional services for data architecture and conceptual design to help NextEra structure their foundational data layer.
+
+* CockroachDB can be instrumental in building NextEra's health analytics application, particularly in grounding AI responses by integrating contextual domain knowledge with raw operational data, leveraging its vector data types and agent state memory capabilities.
+
+* CockroachDB's ability to provide a reliable, low-latency data store for agent state memory and operations aligns with NextEra's strategic focus on agentic workflows.
+
+* CockroachDB is well-suited to manage the "gigantic" volumes of time-series operational data and diverse unstructured contextual data from 400 power plants, addressing their need for a robust solution for large-scale data handling.
+
+
+Competition
+* NextEra Energy currently uses internal development tools like Plotcode and Devon for their internal development efforts.
+
+* They utilize a corporate historian (referred to as "C" or "seabird") and S3 buckets for long-term operational data storage, which is characterized by high latency and is not suitable for real-time analysis.
+
+* Teams frequently use spreadsheets and various BI tools, leading to fragmented data and a lack of a single source of truth.
+
+* They are creating "MCP servers on our computers" which are described as clunky and unreliable.
+
+* While they use Amazon Web Services for cloud solutions, their current implementations suffer from high latency for data retrieval.

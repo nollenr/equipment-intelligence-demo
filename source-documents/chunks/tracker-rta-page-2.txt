@@ -1,0 +1,7 @@
+Complete every applicable item before releasing a TRC-8 tracker row from P09 Safe Stow Hold. Acknowledging the alarm does not establish that the underlying condition has cleared.
+
+Record the authorized inspection or maintenance disposition and confirm the movement envelope is clear of people, vehicles, tools, vegetation, debris, and row interference. Confirm position feedback is present and stable before a qualified operator initiates supervised motion under the approved motion-control procedure.
+
+Complete three supervised commanded moves. For each move, verify absolute commanded-versus-measured deviation remains at or below 2.0 degrees. Verify drive-motor current remains at or below 6.5 amperes during each move and no abnormal noise, vibration, binding, or new P09 event is observed. Obtain control-room authorization, record the release to Automatic Tracking, and monitor the next tracking interval for recurrence.
+
+If any criterion is unmet, feedback is missing or unstable, deviation exceeds 2.0 degrees, drive current exceeds 6.5 amperes, or P09 repeats, retain Safe Stow Hold and escalate to qualified maintenance.

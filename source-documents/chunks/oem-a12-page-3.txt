@@ -1,0 +1,7 @@
+Fault A12 is asserted when the derived cooling-fan command/feedback variance exceeds the configured 12-percentage-point threshold during the controller diagnostic window. The inverter enters Maintenance Hold so the cooling system can be inspected before return to service.
+
+A12 establishes that commanded and reported fan speed disagreed beyond the configured limit. It does not, by itself, prove a failed fan. Obstruction, connector or wiring conditions, feedback sensing, and intermittent mechanical drag remain possible until inspected.
+
+Keep the inverter in Maintenance Hold and confirm the event and diagnostic window with the control room. Inspect accessible intake screens, exhaust openings, fan guards, and the exterior cooling-air path for obstruction, contamination, or damage. Compare fan command and fan feedback; treat missing, unstable, or persistently divergent feedback as unresolved. Use the approved site procedure before any internal inspection and do not open energized compartments for this check. Apply the approved return-to-service checklist after corrective work; do not clear A12 solely because the alarm is acknowledged.
+
+High ambient temperature can increase fan demand, but ambient temperature alone does not explain excessive command/feedback variance or establish component failure.
